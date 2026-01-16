@@ -19,7 +19,7 @@ describe("Shopping cart", () => {
         cy.shouldSeeItemsInCart([Products.SauceLabsBackpack, Products.SauceLabsBikeLight]);
     });
 
-    it("should remove an item from the cart", () => {
+    it("should remove a product from the cart", () => {
         cy.addItemToCart(Products.SauceLabsBackpack);
         cy.openCart();
         cy.removeItemFromCart(Products.SauceLabsBackpack);
