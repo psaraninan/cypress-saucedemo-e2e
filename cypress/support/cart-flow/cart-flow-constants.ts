@@ -1,0 +1,9 @@
+export const Products = {
+    SauceLabsBackpack: "Sauce Labs Backpack",
+    SauceLabsBikeLight: "Sauce Labs Bike Light",
+    SauceLabsBoltTShirt: "Sauce Labs Bolt T-Shirt",
+    SauceLabsFleeceJacket: "Sauce Labs Fleece Jacket",
+    SauceLabsOnesie: "Sauce Labs Onesie"
+} as const;
+
+export type ProductName = typeof Products[keyof typeof Products];
